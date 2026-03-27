@@ -1,0 +1,117 @@
+/* RESET BÁSICO (remove padrões do navegador) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILO GERAL DO SITE */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* ================= HEADER ================= */
+header {
+    display: flex; /* Flexbox para alinhar */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #333;
+    color: #fff;
+}
+
+/* MENU */
+.menu {
+    display: flex; /* Flexbox */
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 1rem;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ================= BANNER ================= */
+.banner {
+    height: 60vh; /* Unidade relativa */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #555;
+    color: white;
+    text-align: center;
+}
+
+/* ================= SEÇÕES ================= */
+section {
+    padding: 2rem;
+}
+
+/* ================= SERVIÇOS ================= */
+.grid-servicos {
+    display: grid; /* CSS GRID */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+/* CARD DE SERVIÇO */
+.card {
+    background: #eee;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* ================= DEPOIMENTOS ================= */
+.depoimentos p {
+    margin-bottom: 1rem;
+}
+
+/* ================= FORMULÁRIO ================= */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+}
+
+/* BOTÃO */
+button {
+    padding: 0.8rem;
+    background: #333;
+    color: white;
+    border: none;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+}
+
+/* ================= RESPONSIVIDADE ================= */
+@media (max-width: 768px) {
+
+    /* Menu vira coluna */
+    .menu {
+        flex-direction: column;
+    }
+
+    /* Header ajusta */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
