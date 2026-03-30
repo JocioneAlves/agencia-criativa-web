@@ -1,44 +1,51 @@
-/* RESET BÁSICO (remove padrões do navegador) */
+/* ================= RESET ================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ESTILO GERAL DO SITE */
+/* ================= BASE ================= */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
+/* ================= LAYOUT GLOBAL ================= */
+section {
+    padding: 2rem;
+}
+
 /* ================= HEADER ================= */
-header {
-    display: flex; /* Flexbox para alinhar */
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
+.header {
     background: #333;
     color: #fff;
 }
 
-/* MENU */
-.menu {
-    display: flex; /* Flexbox */
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.header__menu {
+    display: flex;
     list-style: none;
 }
 
-.menu li {
+.header__item {
     margin-left: 1rem;
 }
 
-.menu a {
+.header__link {
     color: #fff;
     text-decoration: none;
 }
 
 /* ================= BANNER ================= */
 .banner {
-    height: 60vh; /* Unidade relativa */
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,70 +55,105 @@ header {
     text-align: center;
 }
 
-/* ================= SEÇÕES ================= */
-section {
-    padding: 2rem;
+.banner__title {
+    margin-bottom: 1rem;
 }
 
-/* ================= SERVIÇOS ================= */
-.grid-servicos {
-    display: grid; /* CSS GRID */
+.banner__text {
+    font-size: 1.1rem;
+}
+
+/* ================= ABOUT ================= */
+.about__title {
+    margin-bottom: 1rem;
+}
+
+.about__text {
+    max-width: 600px;
+}
+
+/* ================= SERVICES ================= */
+.services__title {
+    margin-bottom: 1.5rem;
+}
+
+.services__grid {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
 }
 
-/* CARD DE SERVIÇO */
-.card {
+.services__card {
     background: #eee;
     padding: 1.5rem;
     text-align: center;
     border-radius: 8px;
 }
 
-/* ================= DEPOIMENTOS ================= */
-.depoimentos p {
+/* ================= TESTIMONIALS ================= */
+.testimonials__title {
     margin-bottom: 1rem;
 }
 
-/* ================= FORMULÁRIO ================= */
-form {
-    display: flex;
-    flex-direction: column;
+.testimonials__item {
+    margin-bottom: 1rem;
 }
 
-form input,
-form textarea {
+/* ================= CONTACT ================= */
+.contact__title {
+    margin-bottom: 1rem;
+}
+
+.contact__info {
+    margin-bottom: 0.5rem;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.contact__input,
+.contact__textarea {
     margin-bottom: 1rem;
     padding: 0.8rem;
 }
 
-/* BOTÃO */
-button {
+.contact__button {
     padding: 0.8rem;
     background: #333;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 /* ================= FOOTER ================= */
-footer {
+.footer {
     text-align: center;
     padding: 1rem;
     background: #222;
     color: #fff;
 }
 
+.footer__text {
+    font-size: 0.9rem;
+}
+
 /* ================= RESPONSIVIDADE ================= */
 @media (max-width: 768px) {
 
-    /* Menu vira coluna */
-    .menu {
-        flex-direction: column;
-    }
-
-    /* Header ajusta */
-    header {
+    .header__container {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .header__menu {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .header__item {
+        margin: 0.5rem 0;
     }
 }

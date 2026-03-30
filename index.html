@@ -1,93 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Configurações básicas -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Título da página -->
     <title>Agência Criativa Web</title>
-
-    <!-- Link do CSS externo -->
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
     <!-- ================= HEADER ================= -->
-    <header>
-        <!-- Logo da empresa -->
-        <div class="logo">Agência Criativa Web</div>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">Agência Criativa Web</div>
 
-        <!-- Menu de navegação -->
-        <nav>
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__item"><a class="header__link" href="#home">Home</a></li>
+                    <li class="header__item"><a class="header__link" href="#sobre">Sobre</a></li>
+                    <li class="header__item"><a class="header__link" href="#servicos">Serviços</a></li>
+                    <li class="header__item"><a class="header__link" href="#depoimentos">Depoimentos</a></li>
+                    <li class="header__item"><a class="header__link" href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- ================= HOME ================= -->
     <section id="home" class="banner">
-        <h1>Bem-vindo à Agência Criativa Web</h1>
-        <p>Transformamos ideias em experiências digitais incríveis.</p>
+        <h1 class="banner__title">Bem-vindo à Agência Criativa Web</h1>
+        <p class="banner__text">Transformamos ideias em experiências digitais incríveis.</p>
     </section>
 
     <!-- ================= SOBRE ================= -->
-    <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>
+    <section id="sobre" class="about">
+        <h2 class="about__title">Sobre Nós</h2>
+        <p class="about__text">
             Somos uma agência especializada em design digital, focada em inovação,
             criatividade e resultados para nossos clientes.
         </p>
     </section>
 
     <!-- ================= SERVIÇOS ================= -->
-    <section id="servicos">
-        <h2>Serviços</h2>
+    <section id="servicos" class="services">
+        <h2 class="services__title">Serviços</h2>
 
-        <!-- Grid de serviços -->
-        <div class="grid-servicos">
-            <div class="card">Design Gráfico</div>
-            <div class="card">Desenvolvimento Web</div>
-            <div class="card">Branding</div>
-            <div class="card">UX/UI Design</div>
+        <div class="services__grid">
+            <div class="services__card">Design Gráfico</div>
+            <div class="services__card">Desenvolvimento Web</div>
+            <div class="services__card">Branding</div>
+            <div class="services__card">UX/UI Design</div>
         </div>
     </section>
 
     <!-- ================= DEPOIMENTOS ================= -->
-    <section id="depoimentos">
-        <h2>Depoimentos</h2>
+    <section id="depoimentos" class="testimonials">
+        <h2 class="testimonials__title">Depoimentos</h2>
 
-        <div class="depoimentos">
-            <p>"Excelente trabalho! Recomendo muito." - Cliente A</p>
-            <p>"Equipe profissional e criativa." - Cliente B</p>
+        <div class="testimonials__list">
+            <p class="testimonials__item">"Excelente trabalho! Recomendo muito." - Cliente A</p>
+            <p class="testimonials__item">"Equipe profissional e criativa." - Cliente B</p>
         </div>
     </section>
 
     <!-- ================= CONTATO ================= -->
-    <section id="contato">
-        <h2>Contato</h2>
+    <section id="contato" class="contact">
+        <h2 class="contact__title">Contato</h2>
 
-        <!-- Informações -->
-        <p>Email: contato@agencia.com</p>
-        <p>Telefone: (21) 99999-9999</p>
+        <p class="contact__info">Email: contato@agencia.com</p>
+        <p class="contact__info">Telefone: (21) 99999-9999</p>
 
-        <!-- Formulário -->
-        <form>
-            <input type="text" placeholder="Seu nome" required>
-            <input type="email" placeholder="Seu email" required>
-            <textarea placeholder="Sua mensagem" required></textarea>
-            <button type="submit">Enviar</button>
+        <form class="contact__form">
+            <input class="contact__input" type="text" placeholder="Seu nome" required>
+            <input class="contact__input" type="email" placeholder="Seu email" required>
+            <textarea class="contact__textarea" placeholder="Sua mensagem" required></textarea>
+            <button class="contact__button" type="submit">Enviar</button>
         </form>
     </section>
 
     <!-- ================= FOOTER ================= -->
-    <footer>
-        <p>© 2026 Agência Criativa Web</p>
+    <footer class="footer">
+        <p class="footer__text">© 2026 Agência Criativa Web</p>
     </footer>
 
 </body>
