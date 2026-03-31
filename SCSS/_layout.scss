@@ -1,0 +1,144 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+.header {
+  background: $cor-primaria;
+  color: $cor-clara; 
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  &__menu {
+    display: flex;
+    list-style: none;
+  }
+
+  &__item {
+    margin-left: 1rem;
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.banner {
+  height: 60vh;
+  @include flex-center;
+  flex-direction: column;
+  background: $cor-secundaria;
+  color: $cor-clara;
+  text-align: center;
+}
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 1.1rem;
+  }
+
+
+.about {
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    max-width: 600px;
+  }
+}
+
+.services {
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  &__card {
+    background: $cor-card;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+  }
+}
+
+.testimonials {
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__item {
+    margin-bottom: 1rem;
+  }
+}
+
+.contact {
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__info {
+    margin-bottom: 0.5rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  &__input,
+  &__textarea {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+  }
+
+  &__button {
+    
+    background: $cor-primaria;
+    color: $cor-clara;
+    @include botao;
+    
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: $cor-primaria;
+  color: $cor-clara;
+
+  &__text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__menu {
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+
+    &__item {
+      margin: 0.5rem 0;
+    }
+  }
+}

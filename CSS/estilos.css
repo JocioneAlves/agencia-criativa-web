@@ -1,0 +1,160 @@
+
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BASE ================= */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* ================= LAYOUT GLOBAL ================= */
+section {
+    padding: 2rem;
+}
+
+/* ================= HEADER ================= */
+.header {
+    background: #333;
+    color: #fff;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.header__menu {
+    display: flex;
+    list-style: none;
+}
+
+.header__item {
+    margin-left: 1rem;
+}
+
+.header__link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ================= BANNER ================= */
+.banner {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #555;
+    color: white;
+    text-align: center;
+}
+
+.banner__title {
+    margin-bottom: 1rem;
+}
+
+.banner__text {
+    font-size: 1.1rem;
+}
+
+/* ================= ABOUT ================= */
+.about__title {
+    margin-bottom: 1rem;
+}
+
+.about__text {
+    max-width: 600px;
+}
+
+/* ================= SERVICES ================= */
+.services__title {
+    margin-bottom: 1.5rem;
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.services__card {
+    background: #eee;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* ================= TESTIMONIALS ================= */
+.testimonials__title {
+    margin-bottom: 1rem;
+}
+
+.testimonials__item {
+    margin-bottom: 1rem;
+}
+
+/* ================= CONTACT ================= */
+.contact__title {
+    margin-bottom: 1rem;
+}
+
+.contact__info {
+    margin-bottom: 0.5rem;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.contact__input,
+.contact__textarea {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+}
+
+.contact__button {
+    padding: 0.8rem;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+}
+
+.footer__text {
+    font-size: 0.9rem;
+}
+
+/* ================= RESPONSIVIDADE ================= */
+@media (max-width: 768px) {
+
+    .header__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__menu {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .header__item {
+        margin: 0.5rem 0;
+    }
+}

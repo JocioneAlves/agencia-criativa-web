@@ -1,0 +1,23 @@
+{
+  "name": "agencia-criativa-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JocioneAlves/agencia-criativa-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JocioneAlves/agencia-criativa-web/issues"
+  },
+  "homepage": "https://github.com/JocioneAlves/agencia-criativa-web#readme",
+  "dependencies": {
+    "sass": "^1.98.0"
+  }
+}

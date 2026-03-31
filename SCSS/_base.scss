@@ -1,0 +1,17 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= BASE ================= */
+body {
+  font-family: $fonte-padrao;
+  line-height: 1.6;
+}
+
+/* ================= LAYOUT GLOBAL ================= */
+section {
+  padding: 2rem;
+}
